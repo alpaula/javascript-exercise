@@ -78,22 +78,22 @@ const createList = (list) => {
 
 const createSelectedItem = (item) => {
   const backButton = document.createElement("button");
-    backButton.textContent = "back";
-    backButton.addEventListener("click", () => handleBack());
+  backButton.textContent = "back";
+  backButton.addEventListener("click", () => handleBack());
 
-    const title = document.createElement("h1");
-    title.textContent = item.name;
+  const title = document.createElement("h1");
+  title.textContent = item.name;
 
-    const img = document.createElement("img")
-    img.setAttribute('src', item.image);
-  
-    const description = document.createElement("p");
-    description.textContent = item.description;
+  const img = document.createElement("img")
+  img.setAttribute('src', item.image);
 
-    body.appendChild(backButton);
-    body.appendChild(title);
-    body.appendChild(img);
-    body.appendChild(description);
+  const description = document.createElement("p");
+  description.textContent = item.description;
+
+  body.appendChild(backButton);
+  body.appendChild(title);
+  body.appendChild(img);
+  body.appendChild(description);
 }
 
 const selectType = document.createElement("select");
